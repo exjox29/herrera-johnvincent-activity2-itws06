@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activity: Unstyled DOM Challenge</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- SITE HEADER / NAVIGATION -->
+    <header id="site-header">
+        <div class="brand-logo">DevPulse Academy</div>
+        <nav id="main-nav">
+            <ul>
+                <li><a href="#courses">Courses</a></li>
+                <li><a href="#workshops">Workshops</a></li>
+                <li><a href="#resources">Resources</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#enroll" class="nav-cta">Enroll Now</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section id="hero">
+        <span class="badge">Fall 2026 Admissions Open</span>
+        <h1 class="hero-title">Master the Art of Web Architecture & Digital Media</h1>
+        <p class="hero-description">Gain hands-on expertise in modern front-end engineering, UI/UX systems, and production-grade software development through industry-aligned coursework.</p>
+        <div class="hero-actions">
+            <a href="#enroll" class="btn-primary">Explore Programs</a>
+            <a href="#curriculum" class="btn-secondary">View Curriculum</a>
+        </div>
+    </section>
+
+    <!-- MAIN CONTENT AREA -->
+    <main id="main-content">
+        
+        <!-- FEATURED COURSES SECTION -->
+        <section id="courses">
+            <h2 class="section-title">Featured Academic Track</h2>
+            <p class="section-subtitle">Comprehensive courses designed to take you from foundational syntax to cloud-ready applications.</p>
+            
+            <div class="card-grid">
+                <!-- Course Card 1 -->
+                <article class="course-card">
+                    <span class="category">Design Systems</span>
+                    <h3 class="card-title">Visual Hierarchy & Web Layouts</h3>
+                    <p class="card-text">Learn how to manipulate white space, typography, color contrast, and scanning patterns to build intuitive web interfaces.</p>
+                    <div class="card-meta">
+                        <span class="duration">8 Weeks</span>
+                        <span class="level">Intermediate</span>
+                    </div>
+                    <a href="#" class="card-link">Course Details &rarr;</a>
+                </article>
+
+                <!-- Course Card 2 -->
+                <article class="course-card">
+                    <span class="category">Engineering</span>
+                    <h3 class="card-title">Full-Stack Web Architecture</h3>
+                    <p class="card-text">Master model-view-controller patterns, API integration, security protocols, and scalable database schema design.</p>
+                    <div class="card-meta">
+                        <span class="duration">12 Weeks</span>
+                        <span class="level">Advanced</span>
+                    </div>
+                    <a href="#" class="card-link">Course Details &rarr;</a>
+                </article>
+
+                <!-- Course Card 3 -->
+                <article class="course-card">
+                    <span class="category">Systems</span>
+                    <h3 class="card-title">Browser Engines & Performance</h3>
+                    <p class="card-text">Explore compilation pipelines, DOM tree execution, memory optimization, and low-level web rendering dynamics.</p>
+                    <div class="card-meta">
+                        <span class="duration">10 Weeks</span>
+                        <span class="level">Advanced</span>
+                    </div>
+                    <a href="#" class="card-link">Course Details &rarr;</a>
+                </article>
+            </div>
+        </section>
+
+        <!-- ANNOUNCEMENT / SIDEBAR CONTENT -->
+        <aside id="announcements">
+            <h3>Upcoming Campus Events</h3>
+            <ul>
+                <li>
+                    <strong>Sep 15:</strong> Web Performance Optimization Seminar
+                </li>
+                <li>
+                    <strong>Oct 02:</strong> UI/UX Portfolio Review Workshop
+                </li>
+                <li>
+                    <strong>Oct 20:</strong> Annual Student Hackathon
+                </li>
+            </ul>
+        </aside>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer id="site-footer">
+        <p>&copy; 2026 DevPulse Academy. All rights reserved.</p>
+        <ul class="footer-links">
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">Contact Support</a></li>
+        </ul>
+    </footer>
+
+    <!-- DOCUMENTATION & REFLECTION SECTION (STUDENTS FILL THIS OUT) -->
+    <section id="student-documentation" style="margin-top: 50px; border-top: 2px dashed #ccc; padding-top: 20px;">
+        <h2>Student Visual Hierarchy Documentation</h2>
+        <p>Document the specific CSS strategies you implemented for at least 5 elements to establish visual hierarchy.</p>
+
+        <table border="1" cellpadding="8" cellspacing="0" style="width: 100%; border-collapse: collapse;">
+            <thead>
+                <tr>
+                    <th style="width: 20%;">Target Element / Class</th>
+                    <th style="width: 25%;">Hierarchy Principles Applied</th>
+                    <th style="width: 55%;">Implementation Details & Design Rationale</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- EXAMPLE ROW 1 -->
+                <tr>
+                    <td><code>.hero-title (h1)</code></td>
+                    <td>Size & Scale, Color & Contrast, Reading Patterns</td>
+                    <td>Made this the largest text on the page (2.75rem, bold) with high-contrast text color so it acts as the primary Level 1 focal point in a Z-pattern layout flow.</td>
+                </tr>
+                <!-- STUDENT ITEM 1 -->
+                <tr>
+                    <td><code>.brand-logo</code></td>
+                    <td>Size & Scale, Typography Hierarchy, Color & Contrast</td>
+                    <td>Used a larger and bold font to make the brand name noticeable in the header. Georgia was used to give the logo a distinct typographic style, while white text against the black header provides clear contrast.</td>
+                </tr>
+                <!-- STUDENT ITEM 2 -->
+                <tr>
+                    <td><code>.nav-cta</code></td>
+                    <td>Size & Scale, Color & Contrast, Proximity & Grouping</td>
+                    <td>Added padding and a red background to make the “Enroll Now” button stand out from the other navigation links. Its position with the other navigation items keeps it grouped with the main navigation.</td>
+                </tr>
+                <!-- STUDENT ITEM 3 -->
+                <tr>
+                    <td><code>.hero-description</code></td>
+                    <td>Typography Hierarchy, Negative Space, Reading Patterns</td>
+                    <td>Used a smaller font than the hero title and added line-height and bottom margin to make the paragraph easier to read. Its position below the main heading supports the natural top-to-bottom reading flow.</td>
+                </tr>
+                <!-- STUDENT ITEM 4 -->
+                <tr>
+                    <td><code>.card-grid</code></td>
+                    <td>Alignment & Grids, Proximity & Grouping, Negative Space</td>
+                    <td>Used a three-column grid to organize the three courses evenly. The gap between the cards separates each course while keeping them visually grouped as one section.</td>
+                </tr>
+                <!-- STUDENT ITEM 5 -->
+                <tr>
+                    <td><code>.course-card</code></td>
+                    <td>Proximity & Grouping, Negative Space, Color & Contrast</td>
+                    <td>Added padding to give the content enough space and used a black border to separate each card from the page background. Related information such as the category, title, description, course details, and link are kept together inside each card.</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+</body>
+</html>
